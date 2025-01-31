@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+     <!--------------------------------head-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEURIK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="particles.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<!--------------------------------body-->
+<body>
+    <header>
+        <div class="banner"></div>
+        <div class="header-content">
+            <div id="datetime" class="datetime"></div>
+            <button id="theme-toggle">🌙 Mode Sombre</button>
+        </div>
+    </header>
+    
+    <h1>Bienvenue !!</h1>
+
+    <nav>
+        <button class="menu-toggle">☰ Menu</button>
+        <ul class="nav-list">
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#schedule">Calendrier</a></li>
+            <li><a href="#clips">Live</a></li>
+            <li><a href="pictionnary.html">pictionnary</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>À propos de moi</h2>
+        <img src="images/meurik.jpg" alt="Photo de Meurik" class="profile-img">
+        <p>Je suis Meurik, un streamer passionné de jeux d'horreur, de simulateurs en tout genre et de grosses sorties. Rejoignez-moi pour des moments fun, des défis et une super communauté !</p>
+    </section>
+    
+    <section id="schedule">
+        <h2>Calendrier des streams</h2>
+        <p>Retrouvez-moi en live aux horaires suivants :</p>
+        <ul>
+            <li>Lundi : 18h - 21h</li>
+            <li>Mercredi : 18h - 21h</li>
+            <li>Vendredi : 20h - 23h</li>
+        </ul>
+    </section>
+    
+    <section id="clips">
+        <h2>Le live</h2>
+        <div class="loader" id="loader"></div>
+       
+        <div class="clip-container">
+            <iframe 
+                src="https://player.kick.com/meurik" 
+                onload="this.closest('.clip-container').classList.add('loaded')"
+                height="720" 
+                width="1280" 
+                frameborder="0" 
+                scrolling="no" 
+                allowfullscreen="true">
+            </iframe>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Pour toute collaboration ou question, envoyez-moi un message :</p>
+        <form
+            action="https://formspree.io/f/xovjweka"
+            method="POST">
+        <label>
+             Votre email:
+            <input type="email" name="email">
+            </label>
+            <label>
+            Votre message:
+            <textarea name="message"></textarea>
+            </label>
+ 
+            <button type="submit">Envoyer</button>
+        </form>
+
+       <!-- <form action="meuriktv@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+    
+            <button type="submit">Envoyer</button>
+        </form>-->
+
+    </section>
+<!--------------------------------footer-->
+    <footer>
+        <p>Suivez-moi sur :</p>
+        <a href="https://kick.com/meurik" target="_blank">Kick</a>
+        <a href="https://twitter.com/votrecompte" target="_blank">Twitter</a>
+        <a href="https://instagram.com/votrecompte" target="_blank">Instagram</a>
+        <a href="https://www.tiktok.com/@meurik_tv" target="_blank">TikTok</a>
+        <p>&copy; 2023 Meurik. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
